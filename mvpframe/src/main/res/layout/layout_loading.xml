@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tv_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_loading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/text_grey_dark"
+            android:textSize="@dimen/sp_32" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_net_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_loading_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/icon_loading_error" />
+
+        <TextView
+            android:id="@+id/tv_net_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_loading_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="网络好像不太好"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_32" />
+
+        <TextView
+            android:id="@+id/tv_net_error_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_net_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="别紧张，点击屏幕重新试试"
+            android:textColor="@color/text_grey_dark"
+            android:textSize="@dimen/sp_32" />
+
+        <Button
+            android:id="@+id/btn_net_check"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_72"
+            android:layout_below="@id/tv_net_error_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_30"
+            android:background="@drawable/btn_bg"
+            android:text="@string/text_net_check"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_28"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

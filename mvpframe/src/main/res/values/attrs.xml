@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="IRecyclerView">
+        <attr name="scrollBarTrackWidth" format="dimension" />
+        <attr name="scrollBarTrackHeight" format="dimension" />
+        <attr name="scrollBarThumbSize" format="dimension" />
+    </declare-styleable>
+
+</resources>

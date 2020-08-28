@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="progress_bg">#657174</color>
+    <color name="progress_sec">#b4bdc0</color>
+    <color name="progress_fst">#0bbe06</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="text_grey_navi">#80ffffff</color>
+    <color name="text_grey_light">#99ffffff</color>
+    <color name="text_grey_dark">#80ffffff</color>
+    <color name="text_grey">#4dffffff</color>
+    <color name="line_grey">#3f4047</color>
+    <color name="text_select_green">#0bbe06</color>
+    <color name="text_srarch_grey">#4dffffff</color>
+    <color name="navi_item_bg">#902a2c34</color>
+    <color name="text_white_dark">#ccffffff</color>
+    <color name="text_vip_info_light">#f3daaa</color>
+    <color name="dialog_bg">#20222e</color>
+    <color name="text_vip_tag">#362517</color>
+    <color name="black_alpha_light">#66000000</color>
+    <color name="color_search_aqiyi_tips">#33ffffff</color>
+    <color name="color_search_text_hint">#4d91a2c8</color>
+    <color name="color_search_bg">#801e1f27</color>
+    <color name="color_btn_search_normal">#87878b</color>
+    <color name="color_search_title">#8092a3c7</color>
+    <color name="color_lable_bg_normal">#21232c</color>
+    <color name="color_refresh_bg">#99000000</color>
+    <color name="color_state_bg">#44000000</color>
+    <color name="color_drama_bg_normal">#353537</color>
+    <color name="color_toast_bg">#1f222e</color>
+    <color name="color_gesture_bg">#66000000</color>
+    <color name="color_drame_normal">#33ffffff</color>
+
+
+</resources>
