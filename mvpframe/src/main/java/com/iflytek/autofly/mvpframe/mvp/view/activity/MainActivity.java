@@ -3,13 +3,18 @@ package com.iflytek.autofly.mvpframe.mvp.view.activity;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.iflytek.autofly.mvpframe.R;
 import com.iflytek.autofly.mvpframe.base.BaseActivity;
 import com.iflytek.autofly.mvpframe.base.RetryLoadInterface;
 import com.iflytek.autofly.mvpframe.mvp.model.bean.NaviBean;
 import com.iflytek.autofly.mvpframe.mvp.model.iview.IMainAtyView;
 import com.iflytek.autofly.mvpframe.mvp.presenter.MainPresenter;
+import com.iflytek.autofly.mvpframe.utils.Constants;
 import com.iflytek.autofly.mvpframe.utils.LogHelper;
 import com.iflytek.autofly.mvpframe.utils.NoDoubleClickUtil;
 import java.util.List;
@@ -23,6 +28,9 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainAt
 
     @BindView(R.id.tv_net_load)
     TextView tvNetLoad;
+
+    @BindView(R.id.iv_glide)
+    ImageView ivGlide;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,7 +53,13 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainAt
 
     @Override
     protected void initViewAndListener() {
-
+        Glide.with(this)
+                .load("http://pic1.iqiyipic.com/image/20191106/1b/a8/v_140690116_m_601_m1.jpg")
+                .centerCrop()
+                .placeholder(R.mipmap.cover_default)
+                .error(R.mipmap.cover_default)
+                .apply(RequestOptions.bitmapTransform(new RoundedCorners(Constants.ROUND_RADIUS)))
+                .into(ivGlide);
     }
 
     @Override

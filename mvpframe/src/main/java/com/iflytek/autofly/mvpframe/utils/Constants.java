@@ -15,6 +15,7 @@ public class Constants {
     public static final String PROP_DUID = "persist.sys.navi.did";
     public static final String PROP_APPID = "persist.sys.navi.openid";
 
+    public static final int ROUND_RADIUS = 20;
     public static final int ONLINE_TIME_OUT = 60 * 10;
     public static final int OFFLINE_TIME_OUT_DAY = 60 * 60 * 24;
 
