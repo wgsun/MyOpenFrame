@@ -17,6 +17,7 @@ import com.iflytek.autofly.mvpframe.mvp.presenter.MainPresenter;
 import com.iflytek.autofly.mvpframe.utils.Constants;
 import com.iflytek.autofly.mvpframe.utils.LogHelper;
 import com.iflytek.autofly.mvpframe.utils.NoDoubleClickUtil;
+import com.iflytek.autofly.mvpframe.utils.RxjavaZipTest;
 import java.util.List;
 import androidx.annotation.Nullable;
 import butterknife.BindView;
@@ -65,6 +66,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements IMainAt
     @Override
     protected void initData() {
         mPresenter.reqNaviInfo();
+        RxjavaZipTest.zipTest();
     }
 
     @OnClick({R.id.tv_net_load})
