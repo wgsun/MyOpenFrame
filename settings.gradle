@@ -1,3 +1,4 @@
+include ':architecture'
 include ':mvvmframe'
 include ':mvpframe'
 include ':app'
